@@ -28,6 +28,7 @@
     },
     "cSpell.words": [
       "IERC",
+      "Reentrancy",
       "Restake",
       "SPDX",
       "Staker",
@@ -56,5 +57,6 @@
     ],
     "cSpell.enableFiletypes": [
       "solidity"
-    ]
+    ],
+    "solidity.compileUsingRemoteVersion": "v0.8.6+commit.11564f7e"
   }

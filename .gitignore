@@ -15,3 +15,7 @@ coverage.json
 .DS_Store
 package-lock.json
 
+bin
+pnpm-lock.yaml
+.vscode
+yarn.lock
