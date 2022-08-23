@@ -6,9 +6,8 @@
   "scripts": {
     "clean": "hardhat clean",
     "compile": "hardhat --show-stack-traces --max-memory 8192 compile",
-    "coverage": "HIDE_DEPLOY_LOG=true OPTIMIZER_DISABLED=true hardhat coverage --solcoverjs ./.solcover.js --temp artifacts --testfiles \"./test/**/*.ts\"",
+    "coverage": "hardhat coverage --solcoverjs ./.solcover.js --temp artifacts --testfiles \"./test/**/*.ts\"",
     "deploy": "hardhat deploy --write true --network",
-    "deploy:rinkeby": "hardhat deploy --write true --network rinkeby --tags",
     "deploy:hardhat": "hardhat deploy --write true --network hardhat --tags",
     "verify": "hardhat etherscan-verify --license MIT --solc-input --network",
     "etherscan-verify": "hardhat etherscan:verify --network",
@@ -17,7 +16,7 @@
     "lint:ts": "eslint --config ./.eslintrc.yaml --ignore-path ./.eslintignore --ext .js,.ts .",
     "prettier": "prettier --config .prettierrc --write \"**/*.{js,json,md,sol,ts}\"",
     "prettier:list-different": "prettier --config .prettierrc --list-different \"**/*.{js,json,md,sol,ts}\"",
-    "test": "HIDE_DEPLOY_LOG=true OPTIMIZER_DISABLED=true hardhat test",
+    "test": "hardhat test",
     "typechain": "hardhat typechain"
   },
   "dependencies": {

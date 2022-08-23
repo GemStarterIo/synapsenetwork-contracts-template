@@ -21,7 +21,7 @@ dotenvConfig({ path: resolve(__dirname, "./.env") });
 
 const config: HardhatUserConfig = {
   solidity: {
-    version: "0.8.6",
+    version: "0.8.15",
     settings: {
       optimizer: {
         enabled: true,
